@@ -8,7 +8,7 @@
             <div class="card-body">
                 <p class="card-text">{{$post->text}}</p>
                 <p> {{ $post->user->name }} </p>
-                <a href="#" class="btn btn-primary">Dettagli</a>
+                <a href=" {{route('guests.post.show' , $post->slug)}} " class="btn btn-primary">Dettagli</a>
             </div>
         </div>
         @endforeach
