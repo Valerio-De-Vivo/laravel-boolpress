@@ -14,6 +14,9 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', 'HomeController@index')->name('index');
+Route::get('/posts', 'PostController@index')->name('guests.posts.index');
+
+
 
 Auth::routes();
 
