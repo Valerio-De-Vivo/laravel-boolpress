@@ -10942,3 +10942,16 @@ a.text-dark:focus {
   }
 }
 
+main.py-4 {
+  display: flex;
+}
+
+main.py-4 ul {
+  width: 20%;
+}
+
+main.py-4 ul li {
+  list-style: none;
+  padding: 10px 0;
+}
+
