@@ -16,6 +16,13 @@
                 <input type="text" class="form-control" id="testo" name="text">
             </div>
             
+            @foreach ($tags as $tag)
+                <div class="form-check">
+                    <input type="checkbox" class="form-check-input" name="tags[]" value="{{$tag->id}}">
+                    <label class="form-check-label" for="exampleCheck1"> {{$tag->name}} </label>
+                </div>
+            @endforeach
+            
             <button type="submit" class="btn btn-primary">Submit</button>
         </form>
     </div>
