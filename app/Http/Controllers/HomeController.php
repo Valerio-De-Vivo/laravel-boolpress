@@ -26,7 +26,7 @@ class HomeController extends Controller
         $newLead = new Lead();
         $newLead->fill($data);
         $newLead->save();
-        Mail::to('cippa.italy@hotmail.it')->send(new SendMail());
+        Mail::to('cippa.italy@hotmail.it')->send(new SendMail($newLead));
 
         return redirect()->route('guests.contatti')->with('status' , 'messaggio inviato');
         
